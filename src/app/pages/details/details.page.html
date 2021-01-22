@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-button>
+    <ion-title>details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Name</ion-label><br>
+    <ion-input color="dark" type="text" placeholder="Name"> </ion-input>
+  </ion-item>
+  <ion-input [(ngModel)]="maVariable" color="dark" type="text" placeholder="First Name"> </ion-input>
+
+  <ion-button (click)="afficheVar()">
+    Afficher maVariable
+  </ion-button>
+
+  <ul>
+    <li *ngFor="let item of monTableau"> {{item}}</li>
+  </ul>
+  <ion-list>
+    <ion-item *ngFor="let item of monTableau let i = index"> {{i}} {{item}} <ion-button slot="end" (click)="supprItem(i)">Supprimer</ion-button></ion-item>
+  </ion-list>
+</ion-content>
+

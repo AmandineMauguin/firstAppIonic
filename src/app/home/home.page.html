@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Home </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,8 +11,68 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="">
+    <strong>Ready to create an app? Ui</strong>
+    <ion-text color="primary">
+      {{titre}}
+      <h1>Titre h1</h1>
+      <p></p>
+    </ion-text>
+    <ion-text color="secondary">
+      <h1>Titre h1</h1>
+    </ion-text>
+    <ion-text color="light">
+      <h1>Titre h1</h1>
+      <p color="dark">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora illum
+        esse eos deleniti, ipsa iusto similique autem natus inventore officia
+        maxime animi in commodi. Eos voluptate similique iste saepe nam.
+      </p>
+    </ion-text>
+    <ion-button color="danger"> I'm a button :D </ion-button><br />
+    <ion-button href="https://google.fr" target="blank">
+      Oh ! Hello button :D I'm a button too !</ion-button
+    ><br />
+    <ion-button color="danger"> Oh really ??? That's amazing ! </ion-button
+    ><br />
+    <ion-button> I know right ! I'm impressed of myself. </ion-button><br />
+    <ion-button color="danger"> Well, you can be ! </ion-button><br />
+    <ion-button> I mean, you can be proud of yourself too. </ion-button><br />
+    <ion-button color="danger"> You think so ? ;;</ion-button><br />
+    <ion-button> Yeah ! Of course ! </ion-button><br />
+    <ion-button shape="round" color="tertiary"> Hello there</ion-button><br />
+    <ion-button> Oh ! Hi ! Are you a button too ? </ion-button><br />
+    <ion-button shape="round" color="tertiary"> Yes, I am !</ion-button><br />
+    <ion-button color="danger"> We're three now, awesome !</ion-button><br />
+    <ion-button expand="block" shape="round" color="tertiary">
+      Look what I can doooooo</ion-button
+    ><br />
+    <ion-button color="primary"> That's nice !</ion-button><br />
+    <ion-button color="danger">
+      <ion-icon slot="start" name="home"> </ion-icon>Wait, what's that ? </ion-button
+    ><br />
+    <ion-button color="primary"> Oh my god, are you okay button ?</ion-button
+    ><br />
+    <ion-button color="tertiary" shape="round">
+      You look... Different...</ion-button
+    ><br />
+    <ion-button color="danger">
+      <ion-icon name="home"></ion-icon> I don't feel so well... I think I have a
+      virus...</ion-button
+    ><br />
+
+    <a href="/details">Voir la page Détails</a><br />
+    <a routerlink="/details">Voir la page Détails</a><br />
+    <ion-button (click)="openDetails()"> Accéder à la page Détails </ion-button
+    ><br />
+    <ion-button routerLink="/gallery"> Accéder à la page Gallery </ion-button
+      ><br />
   </div>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>
+        
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
 </ion-content>
